@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>todomvc</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="todoapp">
+        <header>
+            {{todos}}
+            <h1>todos</h1>
+            <input class="new-todo"
+            v-model="todos"
+            @keyup.enter="addTodo"
+            autofocus
+            autocomplete="off"
+            placeholder="添加待办事项">
+
+        </header>
+        <section>
+
+        </section>
+        <footer>
+
+        </footer>
+    </section>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
